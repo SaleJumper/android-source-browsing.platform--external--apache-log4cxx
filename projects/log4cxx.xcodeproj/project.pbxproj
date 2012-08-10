@@ -155,38 +155,22 @@
 		D70300C20DC6423D00CD92C7 /* xmllayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047E /* xmllayout.cpp */; };
 		D70300C30DC6423D00CD92C7 /* xmlsocketappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047F /* xmlsocketappender.cpp */; };
 		D70300C40DC6423D00CD92C7 /* zipcompressaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000480 /* zipcompressaction.cpp */; };
-		D72361F90DC6426500DE89F3 /* libapr-util-1.2.12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D767524F0DC63686001EE095 /* libapr-util-1.2.12.a */; };
-		D72361FA0DC6426700DE89F3 /* libapr-1.2.12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D76752460DC6365A001EE095 /* libapr-1.2.12.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D72361F00DC6426000DE89F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
-			remoteInfo = "apr-1.2.12";
-		};
-		D72361F20DC6426000DE89F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
-			remoteInfo = "apr-util-1.2.12";
-		};
-		D76752450DC6365A001EE095 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D;
-			remoteInfo = "apr-1.2.12";
-		};
-		D767524E0DC63686001EE095 /* PBXContainerItemProxy */ = {
+		FAE39FCF15D58CF0004FB85F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D;
+			remoteGlobalIDString = D2AAC046055464E500DB518D /* libapr-util-1.2.12.a */;
 			remoteInfo = "apr-util-1.2.12";
+		};
+		FAE39FD715D58CF6004FB85F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D /* libapr-1.2.12.a */;
+			remoteInfo = "apr-1.2.12";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -342,8 +326,8 @@
 		D703002C0DC641C300CD92C7 /* liblog4cxx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblog4cxx.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72362040DC642F500DE89F3 /* MacConfigExternalRelease.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = MacConfigExternalRelease.xcconfig; path = ../../MacConfigExternalRelease.xcconfig; sourceTree = SOURCE_ROOT; };
 		D72362050DC642F500DE89F3 /* MacConfigExternalDebug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = MacConfigExternalDebug.xcconfig; path = ../../MacConfigExternalDebug.xcconfig; sourceTree = SOURCE_ROOT; };
-		D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "apr-1.2.12.xcodeproj"; path = "../../apr-1.2.12/apr-1.2.12.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "apr-util-1.2.12.xcodeproj"; path = "../../apr-util-1.2.12/apr-util-1.2.12.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "apr-1.2.12.xcodeproj"; path = "../../apache-apr/apr-1.2.12.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "apr-util-1.2.12.xcodeproj"; path = "../../apache-apr-util/apr-util-1.2.12.xcodeproj"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,8 +335,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D72361F90DC6426500DE89F3 /* libapr-util-1.2.12.a in Frameworks */,
-				D72361FA0DC6426700DE89F3 /* libapr-1.2.12.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,18 +518,18 @@
 			name = log4cxx;
 			sourceTree = "<source>";
 		};
-		D767523F0DC6365A001EE095 /* Products */ = {
+		FAE39FCC15D58CF0004FB85F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D76752460DC6365A001EE095 /* libapr-1.2.12.a */,
+				FAE39FD015D58CF0004FB85F /* libapr-util-1.2.12.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D76752480DC63686001EE095 /* Products */ = {
+		FAE39FD415D58CF6004FB85F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D767524F0DC63686001EE095 /* libapr-util-1.2.12.a */,
+				FAE39FD815D58CF6004FB85F /* libapr-1.2.12.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -576,8 +558,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D72361F10DC6426000DE89F3 /* PBXTargetDependency */,
-				D72361F30DC6426000DE89F3 /* PBXTargetDependency */,
 			);
 			name = log4cxx;
 			productName = log4cxx;
@@ -603,11 +583,11 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D767523F0DC6365A001EE095 /* Products */;
+					ProductGroup = FAE39FD415D58CF6004FB85F /* Products */;
 					ProjectRef = D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */;
 				},
 				{
-					ProductGroup = D76752480DC63686001EE095 /* Products */;
+					ProductGroup = FAE39FCC15D58CF0004FB85F /* Products */;
 					ProjectRef = D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */;
 				},
 			);
@@ -619,18 +599,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D76752460DC6365A001EE095 /* libapr-1.2.12.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libapr-1.2.12.a";
-			remoteRef = D76752450DC6365A001EE095 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D767524F0DC63686001EE095 /* libapr-util-1.2.12.a */ = {
+		FAE39FD015D58CF0004FB85F /* libapr-util-1.2.12.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libapr-util-1.2.12.a";
-			remoteRef = D767524E0DC63686001EE095 /* PBXContainerItemProxy */;
+			remoteRef = FAE39FCF15D58CF0004FB85F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FAE39FD815D58CF6004FB85F /* libapr-1.2.12.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libapr-1.2.12.a";
+			remoteRef = FAE39FD715D58CF6004FB85F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -792,19 +772,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D72361F10DC6426000DE89F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "apr-1.2.12";
-			targetProxy = D72361F00DC6426000DE89F3 /* PBXContainerItemProxy */;
-		};
-		D72361F30DC6426000DE89F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "apr-util-1.2.12";
-			targetProxy = D72361F20DC6426000DE89F3 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000000000486 /* Debug */ = {
