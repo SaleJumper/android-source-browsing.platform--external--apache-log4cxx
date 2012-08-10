@@ -49,7 +49,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/EHsc "
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)..\src\main\include&quot;;&quot;$(ProjectDir)..\..\apr-1.2.12\include&quot;;&quot;$(ProjectDir)..\..\apr-util-1.2.12\include&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)..\src\main\include&quot;;&quot;$(ProjectDir)..\..\apache-apr\include&quot;;&quot;$(ProjectDir)..\..\apache-apr-util\include&quot;"
 				PreprocessorDefinitions="_DEBUG;_USRDLL;DLL_EXPORTS;LOG4CXX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;WIN32"
 				RuntimeLibrary="3"
 				PrecompiledHeaderFile=""
@@ -129,7 +129,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/EHsc "
 				Optimization="2"
-				AdditionalIncludeDirectories="&quot;$(ProjectDir)..\src\main\include&quot;;&quot;$(ProjectDir)..\..\apr-1.2.12\include&quot;;&quot;$(ProjectDir)..\..\apr-util-1.2.12\include&quot;"
+				AdditionalIncludeDirectories="&quot;$(ProjectDir)..\src\main\include&quot;;&quot;$(ProjectDir)..\..\apache-apr\include&quot;;&quot;$(ProjectDir)..\..\apache-apr-util\include&quot;"
 				PreprocessorDefinitions="NDEBUG;_USRDLL;DLL_EXPORTS;LOG4CXX;APR_DECLARE_STATIC;APU_DECLARE_STATIC;WIN32"
 				StringPooling="true"
 				RuntimeLibrary="2"
