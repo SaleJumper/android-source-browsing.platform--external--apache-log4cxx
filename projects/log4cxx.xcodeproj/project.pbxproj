@@ -155,21 +155,37 @@
 		D70300C20DC6423D00CD92C7 /* xmllayout.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047E /* xmllayout.cpp */; };
 		D70300C30DC6423D00CD92C7 /* xmlsocketappender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000047F /* xmlsocketappender.cpp */; };
 		D70300C40DC6423D00CD92C7 /* zipcompressaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000480 /* zipcompressaction.cpp */; };
+		FA3C0E6415D9AAF000EAC3C3 /* libapr-util-1.2.12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE39FD015D58CF0004FB85F /* libapr-util-1.2.12.a */; };
+		FA3C0E6515D9AAF300EAC3C3 /* libapr-1.2.12.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE39FD815D58CF6004FB85F /* libapr-1.2.12.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FA3C0E6615D9AAFD00EAC3C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D /* apr-1.2.12 */;
+			remoteInfo = "apr-1.2.12";
+		};
+		FA3C0E6815D9AAFF00EAC3C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D /* apr-util-1.2.12 */;
+			remoteInfo = "apr-util-1.2.12";
+		};
 		FAE39FCF15D58CF0004FB85F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D76752470DC63686001EE095 /* apr-util-1.2.12.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D /* libapr-util-1.2.12.a */;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = "apr-util-1.2.12";
 		};
 		FAE39FD715D58CF6004FB85F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D767523E0DC6365A001EE095 /* apr-1.2.12.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D /* libapr-1.2.12.a */;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = "apr-1.2.12";
 		};
 /* End PBXContainerItemProxy section */
@@ -335,6 +351,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA3C0E6515D9AAF300EAC3C3 /* libapr-1.2.12.a in Frameworks */,
+				FA3C0E6415D9AAF000EAC3C3 /* libapr-util-1.2.12.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +576,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				FA3C0E6715D9AAFD00EAC3C3 /* PBXTargetDependency */,
+				FA3C0E6915D9AAFF00EAC3C3 /* PBXTargetDependency */,
 			);
 			name = log4cxx;
 			productName = log4cxx;
@@ -772,6 +792,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA3C0E6715D9AAFD00EAC3C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "apr-1.2.12";
+			targetProxy = FA3C0E6615D9AAFD00EAC3C3 /* PBXContainerItemProxy */;
+		};
+		FA3C0E6915D9AAFF00EAC3C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "apr-util-1.2.12";
+			targetProxy = FA3C0E6815D9AAFF00EAC3C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000000000486 /* Debug */ = {
